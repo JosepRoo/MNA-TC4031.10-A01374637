@@ -1,6 +1,8 @@
 ﻿
 #include <iostream>
 #include "/opt/homebrew/opt/libomp/include/omp.h"
+#include <ctime>
+#include <cstdlib>
 
 // Tarea 1
 // Autor: Josep Romagosa Llorden
@@ -11,6 +13,8 @@ using namespace std;
 int main() {
     int n = 10;
     int a[n], b[n], c[n];
+
+    srand(time(0));
 
     // Creamos los arreglos con numeros aleatorios
     for (int i = 0; i < n; i++) {
