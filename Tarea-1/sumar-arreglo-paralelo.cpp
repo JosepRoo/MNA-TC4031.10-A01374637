@@ -11,7 +11,7 @@
 using namespace std;
 
 int main() {
-    int n = 10;
+    int n = 1000;
     int a[n], b[n], c[n];
 
     srand(time(0));
@@ -26,7 +26,7 @@ int main() {
 
     cout << "Arreglo A: ";
 
-    int sizeA = sizeof(a)/sizeof(a[0]);
+    int sizeA = 10;
  
     std::copy(a, a + sizeA,
             std::ostream_iterator<int>(std::cout, " "));
@@ -35,7 +35,7 @@ int main() {
 
     cout << endl << "Arreglo B: ";
 
-    int sizeB = sizeof(a)/sizeof(a[0]);
+    int sizeB = 10;
  
     std::copy(b, b + sizeB,
             std::ostream_iterator<int>(std::cout, " "));
@@ -49,7 +49,7 @@ int main() {
     // Imprimir arreglo C para revisar
     cout << endl << "Arreglo C: ";
 
-    int sizeC = sizeof(a)/sizeof(a[0]);
+    int sizeC = 10;
  
     std::copy(c, c + sizeC,
             std::ostream_iterator<int>(std::cout, " "));
