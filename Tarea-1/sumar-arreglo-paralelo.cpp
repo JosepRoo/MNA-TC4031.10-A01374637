@@ -22,7 +22,7 @@ int main() {
         b[i] = (rand() % 10) + 1;
     }
 
-    // Imprimir arreglo A
+    // Imprimir primeros 10 elementos del arreglo A
 
     cout << "Arreglo A: ";
 
@@ -31,7 +31,7 @@ int main() {
     std::copy(a, a + sizeA,
             std::ostream_iterator<int>(std::cout, " "));
 
-    // Imprimir arreglo B
+    // Imprimir primeros 10 elementos del arreglo B
 
     cout << endl << "Arreglo B: ";
 
@@ -46,7 +46,7 @@ int main() {
         c[i] = a[i] + b[i];
     }
 
-    // Imprimir arreglo C para revisar
+    // Imprimir primeros 10 elementos del arreglo C
     cout << endl << "Arreglo C: ";
 
     int sizeC = 10;
